@@ -16,7 +16,9 @@
     <h1>PokéDex</h1>
     <% for(let i=0; i < poke.length; i++) { %>
         <ul class="pokemon">
-            <li> <u><%= poke[i].name %> </u></li>
+            <a href="/pokemon/<%=i%>">
+                <li> <u><%= poke[i].name %> </u></li>
+            </a>
         </ul>
     <% } %>
 </body>
