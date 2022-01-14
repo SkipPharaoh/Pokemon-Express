@@ -11,13 +11,20 @@ app.use('/views', express.static('views'))
 // DATABASE MODELS //
 const pokemon = require('./models/pokemon')
 
-// INDEX ROUTE
+// INDEX ROUTE //
 app.get('/', (req,res)=>{
     res.send('🌊 Server is on!')
 })
 app.get('/pokemon', (req,res)=>{
     res.render('index.ejs', {
         poke: pokemon
+    })
+})
+
+// SHOW ROUTE //
+app.get('/pokemon/:id', (req,res)=>{
+    res.render('show.ejs', {
+        poke: pokemon[req.params.id]
     })
 })
 
