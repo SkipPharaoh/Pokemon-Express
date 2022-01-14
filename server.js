@@ -6,6 +6,8 @@ const PORT = 3000
 
 // CONFIG //
 app.set('view engine', 'ejs')
+
+// MIDDLEWARE //
 app.use('/views', express.static('views'))
 
 // DATABASE MODELS //
