@@ -1,10 +1,42 @@
+body{
+    background-image: url("https://w.wallhaven.cc/full/4v/wallhaven-4v72xp.png");
+    background-size: contain;
+}
 h1 {
     text-shadow: 1px 0px 10px red;
     text-align: center;
     font-size: 50px;
+    color: mediumspringgreen;
 }
 li{
     text-align: center;
     list-style-position: inside;
     font-size: 30px;
+    color: red;
+    text-shadow: 5px 5px 5px mediumspringgreen;
+}
+li:hover{
+    text-shadow: 5px 5px 5px red;
+    color: white;
+}
+h3{
+    text-shadow: 1px 0px 10px red;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+img{
+    align-content: center;
+}
+a{
+    align-content: center;
+    font-size: 30px;
+    color: red;
+    text-shadow: 5px 5px 5px mediumspringgreen;
+}
+a:hover{
+    text-shadow: 5px 5px 5px red;
+    color: white;
+    text-align: center;
+    width: 100%;
 }
