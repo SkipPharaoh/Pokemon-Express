@@ -20,16 +20,16 @@ const pokemon = [
       img: "http://img.pokemondb.net/artwork/charizard.jpg"
     },
     {
+      name: "Pikachu", 
+      img: "http://img.pokemondb.net/artwork/pikachu.jpg"
+    },
+    {
       name: "Squirtle", 
       img: "http://img.pokemondb.net/artwork/squirtle.jpg"
     },
     {
       name: "Wartortle", 
       img: "http://img.pokemondb.net/artwork/wartortle.jpg"
-    },
-    {
-      name: "Pikachu", 
-      img: "http://img.pokemondb.net/artwork/pikachu.jpg"
     }
   ];
 

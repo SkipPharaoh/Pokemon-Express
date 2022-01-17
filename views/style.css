@@ -1,42 +1,70 @@
 body{
-    background-image: url("https://w.wallhaven.cc/full/4v/wallhaven-4v72xp.png");
+    background-image: url("https://w.wallhaven.cc/full/3k/wallhaven-3k3kyy.jpg");
     background-size: contain;
+
 }
 h1 {
     text-shadow: 1px 0px 10px red;
     text-align: center;
     font-size: 50px;
-    color: mediumspringgreen;
+    color: turquoise;
+}
+.deleteBtn:hover{
+    background-color: turquoise;
+    color: tomato;
+    cursor: pointer;
+}
+.index{
+    width: 55px;
+    height: 55px;
 }
 li{
-    text-align: center;
-    list-style-position: inside;
-    font-size: 30px;
-    color: red;
-    text-shadow: 5px 5px 5px mediumspringgreen;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 1px dashed rgb(229, 255, 0);
+    background-color: rgba(64, 224, 208, 0.521);
 }
 li:hover{
     text-shadow: 5px 5px 5px red;
     color: white;
 }
-h3{
+p{
     text-shadow: 1px 0px 10px red;
     text-align: center;
     font-size: 50px;
     color: white;
+    margin-bottom: 20px;
 }
-img{
-    align-content: center;
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 660px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: block;
+    text-align: center;
 }
 a{
     align-content: center;
     font-size: 30px;
-    color: red;
-    text-shadow: 5px 5px 5px mediumspringgreen;
+    color: white;
+    text-shadow: 5px 5px 5px red;
 }
 a:hover{
-    text-shadow: 5px 5px 5px red;
-    color: white;
+    text-shadow: 5px 5px 5px white;
+    color: yellow;
     text-align: center;
     width: 100%;
+}
+input{
+    display: block;
+    margin: auto;
+    text-align: center;
 }

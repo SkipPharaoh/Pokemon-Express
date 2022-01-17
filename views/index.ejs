@@ -14,12 +14,22 @@
         }
     </style>
     <h1>PokéDex</h1>
+    <a class="main" href="/pokemon/new">New Pokemon</a>
+    <section class="section">
     <% for(let i=0; i < poke.length; i++) { %>
         <ul class="pokemon">
-            <a href="/pokemon/<%=i%>">
-                <li> <u><%= poke[i].name %> </u></li>
-            </a>
+            <li>
+                <a href="/pokemon/<%=i%>"> <%= poke[i].name %>  </a>
+                <img class="index" src="<%= poke[i].img %>">
+                <form action="/pokemon/<%=i%>/edit">
+                    <input class="deleteBtn" type="submit" value="Edit">
+                </form>
+                <form action="/pokemon/<%=i%>?_method=DELETE" method="POST">
+                    <input class="deleteBtn" type="submit" value="Delete">
+                </form>
+            </li>
         </ul>
-    <% } %>
+        <% } %>
+    </section>
 </body>
 </html>
